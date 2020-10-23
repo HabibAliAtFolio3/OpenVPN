@@ -49,7 +49,7 @@ EOF
 
     sleep 5
 
-    sudo ping 10.181.75.40
+    sudo ping 10.181.75.40 -t 5
 
     if ifconfig -l | grep utun0 > /dev/null
     then
